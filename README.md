@@ -240,9 +240,10 @@
     </section>
 
     <section id="itinerary" class="section">
-      <h2>Detailed Itinerary</h2>
+      <h2>Complete 15-Day Itinerary</h2>
       
-     <h3>🇩🇰 Denmark (Dec 20-23)</h3>
+      <!-- DENMARK -->
+      <h3>🇩🇰 Denmark (Dec 20-23)</h3>
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">1</div>
@@ -250,8 +251,8 @@
         </div>
         <ul>
           <li><strong>Morning:</strong> Flight arrival at CPH</li>
-          <li><strong>Afternoon:</strong> Nyhavn harbor walk</li>
-          <li><strong>Evening:</strong> Tivoli Gardens Christmas market</li>
+          <li><strong>Afternoon:</strong> <a href="https://www.visitcopenhagen.com/copenhagen/nyhavn-gdk410881" target="_blank">Nyhavn harbor</a> walk</li>
+          <li><strong>Evening:</strong> <a href="https://www.tivoli.dk/en/" target="_blank">Tivoli Gardens</a> Christmas market</li>
         </ul>
       </div>
       
@@ -261,7 +262,7 @@
           <h4>Dec 21: LEGOLAND Adventure</h4>
         </div>
         <ul>
-          <li><strong>All day:</strong> Train to Billund + LEGOLAND</li>
+          <li><strong>All day:</strong> <a href="https://www.legoland.dk/en/" target="_blank">LEGOLAND Billund</a></li>
           <li><strong>Evening:</strong> Return to Copenhagen</li>
         </ul>
       </div>
@@ -273,9 +274,9 @@
         </div>
         <ul>
           <li><strong>Options:</strong></li>
-          <li>- Rosenborg Castle & hot chocolate</li>
-          <li>- Day trip to Malmö, Sweden</li>
-          <li>- Strøget shopping street</li>
+          <li>- <a href="https://www.kongernessamling.dk/en/rosenborg/" target="_blank">Rosenborg Castle</a> & hot chocolate</li>
+          <li>- Day trip to <a href="https://www.malmotown.com/" target="_blank">Malmö, Sweden</a></li>
+          <li>- <a href="https://www.visitcopenhagen.com/copenhagen/shopping/stroget-gdk586951" target="_blank">Strøget shopping street</a></li>
         </ul>
       </div>
 
@@ -288,8 +289,7 @@
         </div>
         <ul>
           <li><strong>Morning:</strong> Flight to KEF</li>
-          <li><strong>Afternoon:</strong> Pick up rental car</li>
-          <li><strong>Evening:</strong> Hallgrímskirkja + Christmas market</li>
+          <li><strong>Evening:</strong> <a href="https://www.hallgrimskirkja.is/" target="_blank">Hallgrímskirkja</a> + Christmas market</li>
         </ul>
       </div>
       
@@ -299,8 +299,9 @@
           <h4>Dec 24: Golden Circle (Christmas Eve)</h4>
         </div>
         <ul>
-          <li><strong>Full day:</strong> Þingvellir, Geysir, Gullfoss</li>
-          <li><strong>Evening:</strong> Traditional Christmas dinner</li>
+          <li><a href="https://www.thingvellir.is/en" target="_blank">Þingvellir National Park</a></li>
+          <li><a href="https://www.inspiredbyiceland.com/place/geysir/" target="_blank">Geysir</a> hot springs</li>
+          <li><a href="https://www.gullfoss.is/" target="_blank">Gullfoss waterfall</a></li>
         </ul>
       </div>
       
@@ -310,8 +311,7 @@
           <h4>Dec 25: Christmas Relaxation</h4>
         </div>
         <ul>
-          <li><strong>Morning:</strong> Reykjavík walk (shops closed)</li>
-          <li><strong>Afternoon:</strong> Blue Lagoon soak</li>
+          <li><strong>Afternoon:</strong> <a href="https://www.bluelagoon.com/" target="_blank">Blue Lagoon</a> or <a href="https://sky.is/" target="_blank">Sky Lagoon</a></li>
         </ul>
       </div>
       
@@ -321,18 +321,20 @@
           <h4>Dec 26: South Coast Adventure</h4>
         </div>
         <ul>
-          <li><strong>Full day:</strong> Seljalandsfoss, Skógafoss, Reynisfjara</li>
+          <li><a href="https://www.south.is/en/place/seljalandsfoss" target="_blank">Seljalandsfoss</a> waterfall</li>
+          <li><a href="https://www.skogafoss.is/" target="_blank">Skógafoss</a> waterfall</li>
+          <li><a href="https://www.visitreykjanes.is/en/reynisfjara" target="_blank">Reynisfjara black sand beach</a></li>
         </ul>
       </div>
       
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">8</div>
-          <h4>Dec 27: Snaefellsnes Peninsula</h4>
+          <h4>Dec 27: Optional Activities</h4>
         </div>
         <ul>
-          <li><strong>Option 1:</strong> Kirkjufell mountain</li>
-          <li><strong>Option 2:</strong> Northern Lights tour</li>
+          <li><a href="https://www.west.is/en/service/traveling-in-snaefellsnes" target="_blank">Snæfellsnes Peninsula</a> (Kirkjufell mountain)</li>
+          <li>OR <a href="https://guidetoiceland.is/book-tours-holiday/northern-lights-tours" target="_blank">Northern Lights tour</a></li>
         </ul>
       </div>
 
@@ -344,8 +346,7 @@
           <h4>Dec 28: Fly to Rovaniemi</h4>
         </div>
         <ul>
-          <li><strong>Morning:</strong> Flight to Rovaniemi (RVN)</li>
-          <li><strong>Afternoon:</strong> Santa Claus Village</li>
+          <li><strong>Afternoon:</strong> <a href="https://santaclausvillage.info/" target="_blank">Santa Claus Village</a></li>
           <li><strong>Evening:</strong> Arctic Circle ceremony</li>
         </ul>
       </div>
@@ -356,8 +357,8 @@
           <h4>Dec 29: Rovaniemi Activities</h4>
         </div>
         <ul>
-          <li><strong>Morning:</strong> Husky sledding</li>
-          <li><strong>Afternoon:</strong> Snowmobile safari</li>
+          <li><a href="https://www.visitrovaniemi.fi/see-and-do/safaris-and-activities/husky-safaris/" target="_blank">Husky sledding</a></li>
+          <li><a href="https://wildaboutlapland.com/snowmobile-tours-rovaniemi/" target="_blank">Snowmobile safari</a></li>
         </ul>
       </div>
       
@@ -367,8 +368,7 @@
           <h4>Dec 30: Travel to Levi</h4>
         </div>
         <ul>
-          <li><strong>Morning:</strong> Bus/train to Levi (2.5h)</li>
-          <li><strong>Afternoon:</strong> Ski resort check-in</li>
+          <li><strong>Afternoon:</strong> Check-in at <a href="https://www.levi.fi/en" target="_blank">Levi ski resort</a></li>
           <li><strong>Evening:</strong> Northern Lights hunting</li>
         </ul>
       </div>
@@ -379,20 +379,19 @@
           <h4>Dec 31: New Year's Eve in Levi</h4>
         </div>
         <ul>
-          <li><strong>Day:</strong> Skiing/snowboarding</li>
-          <li><strong>Evening:</strong> NYE fireworks & celebration</li>
+          <li><a href="https://www.levi.fi/en/skiing" target="_blank">Skiing/snowboarding</a></li>
+          <li>NYE fireworks</li>
         </ul>
       </div>
       
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">13</div>
-          <h4>Jan 1: Return to Helsinki + Tallinn</h4>
+          <h4>Jan 1: Tallinn Day Trip</h4>
         </div>
         <ul>
-          <li><strong>Morning:</strong> Flight to Helsinki</li>
-          <li><strong>Afternoon:</strong> Ferry to Tallinn (2h)</li>
-          <li><strong>Evening:</strong> Medieval dinner at Olde Hansa</li>
+          <li><a href="https://www.tallink.com/" target="_blank">Ferry to Tallinn</a></li>
+          <li><a href="https://www.oldehansa.ee/" target="_blank">Medieval dinner at Olde Hansa</a></li>
         </ul>
       </div>
       
@@ -402,8 +401,8 @@
           <h4>Jan 2: Helsinki Exploration</h4>
         </div>
         <ul>
-          <li><strong>Morning:</strong> Suomenlinna Fortress</li>
-          <li><strong>Afternoon:</strong> Design District + sauna</li>
+          <li><a href="https://www.suomenlinna.fi/en/" target="_blank">Suomenlinna Fortress</a></li>
+          <li><a href="https://www.loylyhelsinki.fi/en/" target="_blank">Löyly sauna</a></li>
         </ul>
       </div>
       
@@ -413,9 +412,41 @@
           <h4>Jan 3: Departure</h4>
         </div>
         <ul>
-          <li><strong>Morning:</strong> Flight home from HEL</li>
+          <li>Flight home from HEL</li>
         </ul>
       </div>
+    </section>
+
+    <!-- PHOTO GALLERY WITH WORKING IMAGES -->
+    <section id="gallery" class="section">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Nyhavn, Copenhagen">
+          <div class="gallery-caption"><a href="https://www.visitcopenhagen.com/copenhagen/nyhavn-gdk410881" target="_blank">Nyhavn</a></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tivoli Gardens">
+          <div class="gallery-caption"><a href="https://www.tivoli.dk/en/" target="_blank">Tivoli Gardens</a></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1604977048617-3ab9e7c1e0c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="LEGOLAND">
+          <div class="gallery-caption"><a href="https://www.legoland.dk/en/" target="_blank">LEGOLAND</a></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Northern Lights">
+          <div class="gallery-caption"><a href="https://en.visiticeland.com/plan-your-trip/northern-lights/" target="_blank">Aurora Borealis</a></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1544551763-7709d4037515?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Blue Lagoon">
+          <div class="gallery-caption"><a href="https://www.bluelagoon.com/" target="_blank">Blue Lagoon</a></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1579033462043-0f11a7862f7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Santa Village">
+          <div class="gallery-caption"><a href="https://santaclausvillage.info/" target="_blank">Santa Claus Village</a></div>
+        </div>
+      </div>
+    </section>
 
       <!-- ACTION ITEMS -->
       <div class="action-item">
@@ -446,15 +477,6 @@
       </div>
     </section>
       
-      <div class="action-item">
-        <div class="action-title">Critical Bookings Needed</div>
-        <ul>
-          <li>Tivoli Gardens tickets (Dec 20)</li>
-          <li>LEGOLAND tickets (Dec 21)</li>
-          <li>Copenhagen → Reykjavík flights (Dec 23)</li>
-        </ul>
-      </div>
-    </section>
 
     <section id="destinations" class="section">
       <h2>Destination Highlights</h2>
