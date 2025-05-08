@@ -242,15 +242,16 @@
     <section id="itinerary" class="section">
       <h2>Detailed Itinerary</h2>
       
-      <h3>Denmark (Dec 20-23)</h3>
+     <h3>🇩🇰 Denmark (Dec 20-23)</h3>
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">1</div>
           <h4>Dec 20: Arrival in Copenhagen</h4>
         </div>
         <ul>
-          <li>Afternoon: Explore Nyhavn harbor</li>
-          <li>Evening: Tivoli Gardens Christmas market</li>
+          <li><strong>Morning:</strong> Flight arrival at CPH</li>
+          <li><strong>Afternoon:</strong> Nyhavn harbor walk</li>
+          <li><strong>Evening:</strong> Tivoli Gardens Christmas market</li>
         </ul>
       </div>
       
@@ -260,12 +261,190 @@
           <h4>Dec 21: LEGOLAND Adventure</h4>
         </div>
         <ul>
-          <li>Full day at LEGOLAND Billund</li>
-          <li>Evening return to Copenhagen</li>
+          <li><strong>All day:</strong> Train to Billund + LEGOLAND</li>
+          <li><strong>Evening:</strong> Return to Copenhagen</li>
         </ul>
       </div>
       
-      <!-- More itinerary days would go here -->
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">3</div>
+          <h4>Dec 22: Copenhagen Free Day</h4>
+        </div>
+        <ul>
+          <li><strong>Options:</strong></li>
+          <li>- Rosenborg Castle & hot chocolate</li>
+          <li>- Day trip to Malmö, Sweden</li>
+          <li>- Strøget shopping street</li>
+        </ul>
+      </div>
+
+      <!-- ICELAND -->
+      <h3>🇮🇸 Iceland (Dec 23-28)</h3>
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">4</div>
+          <h4>Dec 23: Fly to Reykjavík</h4>
+        </div>
+        <ul>
+          <li><strong>Morning:</strong> Flight to KEF</li>
+          <li><strong>Afternoon:</strong> Pick up rental car</li>
+          <li><strong>Evening:</strong> Hallgrímskirkja + Christmas market</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">5</div>
+          <h4>Dec 24: Golden Circle (Christmas Eve)</h4>
+        </div>
+        <ul>
+          <li><strong>Full day:</strong> Þingvellir, Geysir, Gullfoss</li>
+          <li><strong>Evening:</strong> Traditional Christmas dinner</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">6</div>
+          <h4>Dec 25: Christmas Relaxation</h4>
+        </div>
+        <ul>
+          <li><strong>Morning:</strong> Reykjavík walk (shops closed)</li>
+          <li><strong>Afternoon:</strong> Blue Lagoon soak</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">7</div>
+          <h4>Dec 26: South Coast Adventure</h4>
+        </div>
+        <ul>
+          <li><strong>Full day:</strong> Seljalandsfoss, Skógafoss, Reynisfjara</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">8</div>
+          <h4>Dec 27: Snaefellsnes Peninsula</h4>
+        </div>
+        <ul>
+          <li><strong>Option 1:</strong> Kirkjufell mountain</li>
+          <li><strong>Option 2:</strong> Northern Lights tour</li>
+        </ul>
+      </div>
+
+      <!-- FINLAND -->
+      <h3>🇫🇮 Finland (Dec 28 - Jan 3)</h3>
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">9</div>
+          <h4>Dec 28: Fly to Rovaniemi</h4>
+        </div>
+        <ul>
+          <li><strong>Morning:</strong> Flight to Rovaniemi (RVN)</li>
+          <li><strong>Afternoon:</strong> Santa Claus Village</li>
+          <li><strong>Evening:</strong> Arctic Circle ceremony</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">10</div>
+          <h4>Dec 29: Rovaniemi Activities</h4>
+        </div>
+        <ul>
+          <li><strong>Morning:</strong> Husky sledding</li>
+          <li><strong>Afternoon:</strong> Snowmobile safari</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">11</div>
+          <h4>Dec 30: Travel to Levi</h4>
+        </div>
+        <ul>
+          <li><strong>Morning:</strong> Bus/train to Levi (2.5h)</li>
+          <li><strong>Afternoon:</strong> Ski resort check-in</li>
+          <li><strong>Evening:</strong> Northern Lights hunting</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">12</div>
+          <h4>Dec 31: New Year's Eve in Levi</h4>
+        </div>
+        <ul>
+          <li><strong>Day:</strong> Skiing/snowboarding</li>
+          <li><strong>Evening:</strong> NYE fireworks & celebration</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">13</div>
+          <h4>Jan 1: Return to Helsinki + Tallinn</h4>
+        </div>
+        <ul>
+          <li><strong>Morning:</strong> Flight to Helsinki</li>
+          <li><strong>Afternoon:</strong> Ferry to Tallinn (2h)</li>
+          <li><strong>Evening:</strong> Medieval dinner at Olde Hansa</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">14</div>
+          <h4>Jan 2: Helsinki Exploration</h4>
+        </div>
+        <ul>
+          <li><strong>Morning:</strong> Suomenlinna Fortress</li>
+          <li><strong>Afternoon:</strong> Design District + sauna</li>
+        </ul>
+      </div>
+      
+      <div class="itinerary-day">
+        <div class="day-title">
+          <div class="day-number">15</div>
+          <h4>Jan 3: Departure</h4>
+        </div>
+        <ul>
+          <li><strong>Morning:</strong> Flight home from HEL</li>
+        </ul>
+      </div>
+
+      <!-- ACTION ITEMS -->
+      <div class="action-item">
+        <div class="action-title">Critical Bookings Needed</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+          <div>
+            <strong>Denmark:</strong>
+            <ul>
+              <li>Tivoli tickets (Dec 20)</li>
+              <li>LEGOLAND tickets (Dec 21)</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Iceland:</strong>
+            <ul>
+              <li>Blue Lagoon (Dec 25)</li>
+              <li>Christmas dinner (Dec 24)</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Finland:</strong>
+            <ul>
+              <li>Glass igloo (Dec 28-29)</li>
+              <li>Tallinn ferry (Jan 1)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
       
       <div class="action-item">
         <div class="action-title">Critical Bookings Needed</div>
