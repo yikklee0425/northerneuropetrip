@@ -12,7 +12,40 @@
       --white: #ffffff;
       --shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    
+      <style>
+    /* ADD THESE NEW STYLES */
+    .print-button {
+      background: #2980b9;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 20px 0;
+      display: inline-block;
+    }
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    .summary-table th, .summary-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    .summary-table th {
+      background-color: #f2f2f2;
+    }
+    .transport-icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
@@ -208,7 +241,7 @@
   <header>
     <div class="container">
       <h1>Northern Europe Winter Adventure</h1>
-      <p class="subtitle">Denmark • Iceland • Finland | December 20 - January 3</p>
+      <p class="subtitle">Denmark • Iceland • Finland | December 20, 2025 - January 3, 2026</p>
     </div>
   </header>
 
@@ -224,19 +257,67 @@
     </div>
   </nav>
 
-  <div class="container">
-    <section id="overview" class="section">
-      <h2>Trip Overview</h2>
-      <p>Join our family of seven on an unforgettable winter journey through Northern Europe! This 14-day adventure takes us through the festive streets of Copenhagen, the breathtaking landscapes of Iceland, and the magical winter wonderland of Finnish Lapland.</p>
+  
+
+    <div class="container">
+    <!-- NEW ITINERARY SUMMARY SECTION -->
+    <section id="summary" class="section">
+      <h2>⏱️ Trip Summary</h2>
+      <button class="print-button" onclick="window.print()">Download Printable PDF</button>
       
-      <div class="action-item">
-        <div class="action-title">Family Highlights</div>
-        <ul>
-          <li>Kids (15+): LEGOLAND, Northern Lights, husky sledding</li>
-          <li>Adults: Christmas markets, geothermal spas, design districts</li>
-          <li>All Ages: Santa Claus Village, Tivoli Gardens, Blue Lagoon</li>
-        </ul>
-      </div>
+      <table class="summary-table">
+        <tr>
+          <th>Route</th>
+          <th>Date</th>
+          <th>Mode</th>
+          <th>Action Required</th>
+        </tr>
+        <tr>
+          <td>Home → Copenhagen</td>
+          <td>20 Dec (arrive 13:15)</td>
+          <td><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight</td>
+          <td>Book arrival (CPH)</td>
+        </tr>
+        <tr>
+          <td>Copenhagen → Reykjavík</td>
+          <td>23 Dec (depart night)</td>
+          <td><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight</td>
+          <td>Compare <a href="https://www.flysas.com/" target="_blank">SAS</a>/<a href="https://www.icelandair.com/" target="_blank">Icelandair</a></td>
+        </tr>
+        <tr>
+          <td>Reykjavík → Rovaniemi</td>
+          <td>28 Dec (depart night)</td>
+          <td><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight</td>
+          <td>Or overnight in HEL</td>
+        </tr>
+        <tr>
+          <td>Rovaniemi → Helsinki</td>
+          <td>30 Dec</td>
+          <td>
+            <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight or 
+            <img src="https://cdn-icons-png.flaticon.com/512/619/619165.png" class="transport-icon" alt="Train"> Train
+          </td>
+          <td>Choose preferred mode</td>
+        </tr>
+        <tr>
+          <td>Helsinki ↔ Tallinn</td>
+          <td>1 Jan</td>
+          <td><img src="https://cdn-icons-png.flaticon.com/512/2061/2061118.png" class="transport-icon" alt="Ferry"> Ferry</td>
+          <td>Reserve via <a href="https://www.tallinksilja.com/" target="_blank">Tallink Silja</a></td>
+        </tr>
+        <tr>
+          <td>Helsinki → Copenhagen</td>
+          <td>2 Jan</td>
+          <td><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Copenhagen → Home</td>
+          <td>3 Jan</td>
+          <td><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight</td>
+          <td>Book return from HEL</td>
+        </tr>
+      </table>
     </section>
 
     <section id="itinerary" class="section">
@@ -616,6 +697,23 @@
         a.classList.remove('active');
         if (a.getAttribute('href') === `#${current}`) {
           a.classList.add('active');
+            <style media="print">
+    @page { size: A4; margin: 1cm; }
+    body { font-size: 12pt; background: white; }
+    nav, footer { display: none; }
+    .section { break-inside: avoid; }
+    .gallery { display: none; }
+    .print-button { display: none; }
+  </style>
+
+  <script>
+    // Enhanced print functionality
+    function generatePDF() {
+      window.print();
+    }
+  </script>
+</body>
+</html>
         }
       });
     });
