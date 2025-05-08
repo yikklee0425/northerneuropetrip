@@ -12,40 +12,7 @@
       --white: #ffffff;
       --shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-      <style>
-    /* ADD THESE NEW STYLES */
-    .print-button {
-      background: #2980b9;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      margin: 20px 0;
-      display: inline-block;
-    }
-    .summary-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-    .summary-table th, .summary-table td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-    .summary-table th {
-      background-color: #f2f2f2;
-    }
-    .transport-icon {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
-  </style>
-</head>
-<body>
+    
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
@@ -128,51 +95,38 @@
       margin-bottom: 2rem;
     }
     
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 1.5rem;
-    }
-    
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      height: 200px;
-      box-shadow: var(--shadow);
-      transition: transform 0.3s ease;
-    }
-    
-    .gallery-item:hover {
-      transform: translateY(-5px);
-    }
-    
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-    
-    .gallery-item:hover img {
-      transform: scale(1.05);
-    }
-    
-    .gallery-caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0,0,0,0.7);
+    .print-button {
+      background: #2980b9;
       color: white;
-      padding: 10px;
-      transform: translateY(100%);
-      transition: transform 0.3s ease;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 20px 0;
+      display: inline-block;
     }
     
-    .gallery-item:hover .gallery-caption {
-      transform: translateY(0);
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    
+    .summary-table th, .summary-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    .summary-table th {
+      background-color: #f2f2f2;
+    }
+    
+    .transport-icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
     }
     
     .itinerary-day {
@@ -222,10 +176,6 @@
     }
     
     @media (max-width: 768px) {
-      .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      }
-      
       nav ul {
         flex-direction: column;
         align-items: center;
@@ -234,6 +184,18 @@
       nav li {
         margin: 5px 0;
       }
+      
+      .summary-table {
+        font-size: 14px;
+      }
+    }
+    
+    @media print {
+      @page { size: A4; margin: 1cm; }
+      body { font-size: 12pt; background: white; }
+      nav, footer { display: none; }
+      .section { break-inside: avoid; }
+      .print-button { display: none; }
     }
   </style>
 </head>
@@ -241,26 +203,22 @@
   <header>
     <div class="container">
       <h1>Northern Europe Winter Adventure</h1>
-      <p class="subtitle">Denmark • Iceland • Finland | December 20, 2025 - January 3, 2026</p>
+      <p class="subtitle">Denmark • Iceland • Finland | December 20 - January 3</p>
     </div>
   </header>
 
   <nav>
     <div class="container">
       <ul>
-        <li><a href="#overview" class="active">Overview</a></li>
+        <li><a href="#summary" class="active">Summary</a></li>
         <li><a href="#itinerary">Itinerary</a></li>
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#logistics">Logistics</a></li>
+        <li><a href="#gallery">Gallery</a></li>
       </ul>
     </div>
   </nav>
 
-  
-
-    <div class="container">
-    <!-- NEW ITINERARY SUMMARY SECTION -->
+  <div class="container">
     <section id="summary" class="section">
       <h2>⏱️ Trip Summary</h2>
       <button class="print-button" onclick="window.print()">Download Printable PDF</button>
@@ -321,17 +279,16 @@
     </section>
 
     <section id="itinerary" class="section">
-      <h2>Complete 15-Day Itinerary</h2>
+      <h2>🗓️ Detailed Day-by-Day Itinerary</h2>
       
-      <!-- DENMARK -->
       <h3>🇩🇰 Denmark (Dec 20-23)</h3>
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">1</div>
-          <h4>Dec 20: Arrival in Copenhagen</h4>
+          <h4>Dec 20: Arrival in Copenhagen <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"></h4>
         </div>
         <ul>
-          <li><strong>Morning:</strong> Flight arrival at CPH</li>
+          <li><strong>13:15:</strong> Flight arrives at CPH</li>
           <li><strong>Afternoon:</strong> <a href="https://www.visitcopenhagen.com/copenhagen/nyhavn-gdk410881" target="_blank">Nyhavn harbor</a> walk</li>
           <li><strong>Evening:</strong> <a href="https://www.tivoli.dk/en/" target="_blank">Tivoli Gardens</a> Christmas market</li>
         </ul>
@@ -340,11 +297,12 @@
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">2</div>
-          <h4>Dec 21: LEGOLAND Adventure</h4>
+          <h4>Dec 21: LEGOLAND Adventure <img src="https://cdn-icons-png.flaticon.com/512/619/619165.png" class="transport-icon" alt="Train"></h4>
         </div>
         <ul>
+          <li><strong>08:00:</strong> Train to Billund (3h)</li>
           <li><strong>All day:</strong> <a href="https://www.legoland.dk/en/" target="_blank">LEGOLAND Billund</a></li>
-          <li><strong>Evening:</strong> Return to Copenhagen</li>
+          <li><strong>18:00:</strong> Return to Copenhagen</li>
         </ul>
       </div>
       
@@ -361,15 +319,14 @@
         </ul>
       </div>
 
-      <!-- ICELAND -->
       <h3>🇮🇸 Iceland (Dec 23-28)</h3>
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">4</div>
-          <h4>Dec 23: Fly to Reykjavík</h4>
+          <h4>Dec 23: Fly to Reykjavík <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"></h4>
         </div>
         <ul>
-          <li><strong>Morning:</strong> Flight to KEF</li>
+          <li><strong>21:00:</strong> Night flight to KEF</li>
           <li><strong>Evening:</strong> <a href="https://www.hallgrimskirkja.is/" target="_blank">Hallgrímskirkja</a> + Christmas market</li>
         </ul>
       </div>
@@ -383,6 +340,7 @@
           <li><a href="https://www.thingvellir.is/en" target="_blank">Þingvellir National Park</a></li>
           <li><a href="https://www.inspiredbyiceland.com/place/geysir/" target="_blank">Geysir</a> hot springs</li>
           <li><a href="https://www.gullfoss.is/" target="_blank">Gullfoss waterfall</a></li>
+          <li><strong>Evening:</strong> Traditional Christmas dinner</li>
         </ul>
       </div>
       
@@ -419,12 +377,11 @@
         </ul>
       </div>
 
-      <!-- FINLAND -->
       <h3>🇫🇮 Finland (Dec 28 - Jan 3)</h3>
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">9</div>
-          <h4>Dec 28: Fly to Rovaniemi</h4>
+          <h4>Dec 28: Fly to Rovaniemi <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"></h4>
         </div>
         <ul>
           <li><strong>Afternoon:</strong> <a href="https://santaclausvillage.info/" target="_blank">Santa Claus Village</a></li>
@@ -446,7 +403,7 @@
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">11</div>
-          <h4>Dec 30: Travel to Levi</h4>
+          <h4>Dec 30: Travel to Levi <img src="https://cdn-icons-png.flaticon.com/512/619/619165.png" class="transport-icon" alt="Train"></h4>
         </div>
         <ul>
           <li><strong>Afternoon:</strong> Check-in at <a href="https://www.levi.fi/en" target="_blank">Levi ski resort</a></li>
@@ -468,7 +425,7 @@
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">13</div>
-          <h4>Jan 1: Tallinn Day Trip</h4>
+          <h4>Jan 1: Tallinn Day Trip <img src="https://cdn-icons-png.flaticon.com/512/2061/2061118.png" class="transport-icon" alt="Ferry"></h4>
         </div>
         <ul>
           <li><a href="https://www.tallink.com/" target="_blank">Ferry to Tallinn</a></li>
@@ -479,177 +436,84 @@
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">14</div>
-          <h4>Jan 2: Helsinki Exploration</h4>
+          <h4>Jan 2: Helsinki Exploration <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"></h4>
         </div>
         <ul>
           <li><a href="https://www.suomenlinna.fi/en/" target="_blank">Suomenlinna Fortress</a></li>
           <li><a href="https://www.loylyhelsinki.fi/en/" target="_blank">Löyly sauna</a></li>
+          <li><strong>Evening:</strong> Flight to Copenhagen</li>
         </ul>
       </div>
       
       <div class="itinerary-day">
         <div class="day-title">
           <div class="day-number">15</div>
-          <h4>Jan 3: Departure</h4>
+          <h4>Jan 3: Departure <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"></h4>
         </div>
         <ul>
-          <li>Flight home from HEL</li>
+          <li>Flight home from Copenhagen</li>
         </ul>
-      </div>
-    </section>
-
-    <!-- PHOTO GALLERY WITH WORKING IMAGES -->
-    <section id="gallery" class="section">
-      <h2>Photo Gallery</h2>
-      <div class="gallery">
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Nyhavn, Copenhagen">
-          <div class="gallery-caption"><a href="https://www.visitcopenhagen.com/copenhagen/nyhavn-gdk410881" target="_blank">Nyhavn</a></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tivoli Gardens">
-          <div class="gallery-caption"><a href="https://www.tivoli.dk/en/" target="_blank">Tivoli Gardens</a></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1604977048617-3ab9e7c1e0c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="LEGOLAND">
-          <div class="gallery-caption"><a href="https://www.legoland.dk/en/" target="_blank">LEGOLAND</a></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Northern Lights">
-          <div class="gallery-caption"><a href="https://en.visiticeland.com/plan-your-trip/northern-lights/" target="_blank">Aurora Borealis</a></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1544551763-7709d4037515?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Blue Lagoon">
-          <div class="gallery-caption"><a href="https://www.bluelagoon.com/" target="_blank">Blue Lagoon</a></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1579033462043-0f11a7862f7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Santa Village">
-          <div class="gallery-caption"><a href="https://santaclausvillage.info/" target="_blank">Santa Claus Village</a></div>
-        </div>
-      </div>
-    </section>
-
-      <!-- ACTION ITEMS -->
-      <div class="action-item">
-        <div class="action-title">Critical Bookings Needed</div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
-          <div>
-            <strong>Denmark:</strong>
-            <ul>
-              <li>Tivoli tickets (Dec 20)</li>
-              <li>LEGOLAND tickets (Dec 21)</li>
-            </ul>
-          </div>
-          <div>
-            <strong>Iceland:</strong>
-            <ul>
-              <li>Blue Lagoon (Dec 25)</li>
-              <li>Christmas dinner (Dec 24)</li>
-            </ul>
-          </div>
-          <div>
-            <strong>Finland:</strong>
-            <ul>
-              <li>Glass igloo (Dec 28-29)</li>
-              <li>Tallinn ferry (Jan 1)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-      
-
-    <section id="destinations" class="section">
-      <h2>Destination Highlights</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-        <div>
-          <h3>🇩🇰 Denmark</h3>
-          <ul>
-            <li>Tivoli Gardens Christmas market</li>
-            <li>LEGOLAND Billund</li>
-            <li>Nyhavn waterfront</li>
-          </ul>
-        </div>
-        <div>
-          <h3>🇮🇸 Iceland</h3>
-          <ul>
-            <li>Golden Circle tour</li>
-            <li>Blue Lagoon geothermal spa</li>
-            <li>Northern Lights hunting</li>
-          </ul>
-        </div>
-        <div>
-          <h3>🇫🇮 Finland</h3>
-          <ul>
-            <li>Santa Claus Village (Rovaniemi)</li>
-            <li>Levi ski resort</li>
-            <li>Tallinn day trip (Estonia)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery" class="section">
-      <h2>Photo Gallery</h2>
-      <div class="gallery">
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Copenhagen Nyhavn">
-          <div class="gallery-caption">Nyhavn, Copenhagen</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Tivoli Gardens">
-          <div class="gallery-caption">Tivoli Gardens</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1604977048617-3ab9e7c1e0c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="LEGOLAND">
-          <div class="gallery-caption">LEGOLAND Billund</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Iceland Aurora">
-          <div class="gallery-caption">Northern Lights</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1544551763-7709d4037515?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Blue Lagoon">
-          <div class="gallery-caption">Blue Lagoon</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1579033462043-0f11a7862f7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Santa Village">
-          <div class="gallery-caption">Santa Claus Village</div>
-        </div>
       </div>
     </section>
 
     <section id="logistics" class="section">
-      <h2>Travel Logistics</h2>
+      <h2>📌 Travel Logistics</h2>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
         <div>
-          <h3>Flights</h3>
-          <ul>
-            <li>Copenhagen (CPH) arrival: Dec 20</li>
-            <li>CPH → KEF (Iceland): Dec 23</li>
-            <li>KEF → HEL (Finland): Dec 28/29</li>
-            <li>HEL departure: Jan 3</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Key Links</h3>
+          <h3>Essential Bookings</h3>
           <ul>
             <li><a href="https://www.tivoli.dk/en/" target="_blank">Tivoli Gardens Tickets</a></li>
             <li><a href="https://www.legoland.dk/en/" target="_blank">LEGOLAND Billund</a></li>
-            <li><a href="https://www.bluelagoon.com/" target="_blank">Blue Lagoon Booking</a></li>
-            <li><a href="https://www.visitrovaniemi.fi/" target="_blank">Rovaniemi Activities</a></li>
+            <li><a href="https://www.bluelagoon.com/" target="_blank">Blue Lagoon</a> (Dec 25)</li>
+            <li><a href="https://santaclausvillage.info/" target="_blank">Santa Claus Village</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Transportation</h3>
+          <ul>
+            <li><a href="https://www.dsb.dk/en/" target="_blank">Danish Trains (DSB)</a></li>
+            <li><a href="https://www.vr.fi/en" target="_blank">Finnish Trains (VR)</a></li>
+            <li><a href="https://www.tallinksilja.com/" target="_blank">Tallink Silja Ferries</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Weather Prep</h3>
+          <ul>
+            <li>Denmark: 0°C to 5°C (rain/snow)</li>
+            <li>Iceland: -5°C to 2°C (windy)</li>
+            <li>Finland: -15°C to -5°C (snow)</li>
           </ul>
         </div>
       </div>
-      
-      <div class="action-item" style="margin-top: 20px;">
-        <div class="action-title">Packing Checklist</div>
-        <ul>
-          <li>Thermal base layers</li>
-          <li>Waterproof winter boots</li>
-          <li>Swimsuit (for geothermal spas)</li>
-          <li>Power adapters (EU plugs)</li>
-        </ul>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>📸 Photo Gallery</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 1.5rem;">
+        <div style="position: relative; overflow: hidden; border-radius: 8px; height: 200px; box-shadow: var(--shadow);">
+          <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Nyhavn, Copenhagen" style="width: 100%; height: 100%; object-fit: cover;">
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 10px;">
+            <a href="https://www.visitcopenhagen.com/copenhagen/nyhavn-gdk410881" target="_blank" style="color: white;">Nyhavn, Copenhagen</a>
+          </div>
+        </div>
+        <div style="position: relative; overflow: hidden; border-radius: 8px; height: 200px; box-shadow: var(--shadow);">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tivoli Gardens" style="width: 100%; height: 100%; object-fit: cover;">
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 10px;">
+            <a href="https://www.tivoli.dk/en/" target="_blank" style="color: white;">Tivoli Gardens</a>
+          </div>
+        </div>
+        <div style="position: relative; overflow: hidden; border-radius: 8px; height: 200px; box-shadow: var(--shadow);">
+          <img src="https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Northern Lights" style="width: 100%; height: 100%; object-fit: cover;">
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 10px;">
+            <a href="https://en.visiticeland.com/plan-your-trip/northern-lights/" target="_blank" style="color: white;">Northern Lights</a>
+          </div>
+        </div>
+        <div style="position: relative; overflow: hidden; border-radius: 8px; height: 200px; box-shadow: var(--shadow);">
+          <img src="https://images.unsplash.com/photo-1579033462043-0f11a7862f7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Santa Village" style="width: 100%; height: 100%; object-fit: cover;">
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 10px;">
+            <a href="https://santaclausvillage.info/" target="_blank" style="color: white;">Santa Claus Village</a>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -662,7 +526,7 @@
   </footer>
 
   <script>
-    // Simple smooth scrolling for navigation
+    // Smooth scrolling for navigation
     document.querySelectorAll('nav a').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -697,23 +561,6 @@
         a.classList.remove('active');
         if (a.getAttribute('href') === `#${current}`) {
           a.classList.add('active');
-            <style media="print">
-    @page { size: A4; margin: 1cm; }
-    body { font-size: 12pt; background: white; }
-    nav, footer { display: none; }
-    .section { break-inside: avoid; }
-    .gallery { display: none; }
-    .print-button { display: none; }
-  </style>
-
-  <script>
-    // Enhanced print functionality
-    function generatePDF() {
-      window.print();
-    }
-  </script>
-</body>
-</html>
         }
       });
     });
