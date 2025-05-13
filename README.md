@@ -242,21 +242,24 @@
           <td><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight</td>
           <td>Compare <a href="https://www.flysas.com/" target="_blank">SAS</a>/<a href="https://www.icelandair.com/" target="_blank">Icelandair</a></td>
         </tr>
-        <tr>
-          <td>Reykjavík → Rovaniemi</td>
-          <td>28 Dec (depart night)</td>
-          <td><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight</td>
-          <td>Or overnight in HEL</td>
-        </tr>
-        <tr>
-          <td>Rovaniemi → Helsinki</td>
-          <td>30 Dec</td>
-          <td>
-            <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight or 
-            <img src="https://cdn-icons-png.flaticon.com/512/619/619165.png" class="transport-icon" alt="Train"> Train
-          </td>
-          <td>Choose preferred mode</td>
-        </tr>
+<tr>
+        <td>Reykjavík → Helsinki</td>
+        <td>28 Dec (depart night)</td>
+        <td><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" class="transport-icon" alt="Flight"> Flight</td>
+        <td>Connect to train at HEL</td>
+      </tr>
+      <tr>
+        <td>Helsinki → Rovaniemi</td>
+        <td>28 Dec</td>
+        <td><img src="https://cdn-icons-png.flaticon.com/512/619/619165.png" class="transport-icon" alt="Train"> Train</td>
+        <td>Overnight train</td>
+      </tr>
+      <tr>
+        <td>Rovaniemi → Helsinki</td>
+        <td>30 Dec</td>
+        <td><img src="https://cdn-icons-png.flaticon.com/512/619/619165.png" class="transport-icon" alt="Train"> Train</td>
+        <td>Return journey by rail</td>
+      </tr>
         <tr>
           <td>Helsinki ↔ Tallinn</td>
           <td>1 Jan</td>
@@ -302,6 +305,8 @@
         <ul>
           <li><strong>08:00:</strong> Train to Billund (3h)</li>
           <li><strong>All day:</strong> <a href="https://www.legoland.dk/en/" target="_blank">LEGOLAND Billund</a></li>
+          <li><strong>Another Option:</strong> Travel to Skagen</li>
+
           <li><strong>18:00:</strong> Return to Copenhagen</li>
         </ul>
       </div>
